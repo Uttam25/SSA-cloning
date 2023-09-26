@@ -1,9 +1,12 @@
+'use Client'
 import React, { useState } from 'react'
 import EnquiryForm from '../EnquiryForm'
 import Layout from './Layout'
 
 const  HomePage = () => {
-  const [isFormVisible,setFormVisible]=useState(false)
+
+    const [isFormVisible,setFormVisible] = useState(false)
+    
   return (
     <>
     

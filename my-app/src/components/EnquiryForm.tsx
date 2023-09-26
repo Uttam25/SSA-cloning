@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 
 interface EnquiryFormProps{
-    
+  
 }
 const EnquiryForm : React.FC<EnquiryFormProps> =  () => {
   
@@ -49,13 +49,15 @@ const EnquiryForm : React.FC<EnquiryFormProps> =  () => {
       
         <div className='bg-white flex m-6 w-1/3 flex-col justify-between'>
             <div className='flex flex-col items-center '>
+                <Link href='/'>
             <Image
-               src={'https://sunnystateagency.com/icons/SSA-logo.svg'}
+               src='/icons/SSA-logo.svg'
                 alt='logo'
                 width={70}
                 height={70}
                 className='my-4'
             />
+            </Link>
             <span className='text-purple-700 text-xl font-light text-center mx-6'>We are glad to see you here. Fill out this form and we will be in contact soon.</span>
             </div>
             <div className='flex m-6 bg-white-100 flex-col'>

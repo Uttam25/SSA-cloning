@@ -25,7 +25,7 @@ const Layout :React.FC <LayoutProps>= ({setFormVisible,isFormVisible}) => {
     <div className=' w-95 h-screen  bg-black'>
     <div className='mx-6'>
         <Header setFormVisible={setFormVisible} isFormVisible={isFormVisible} />
-        <Section setFormVisible={setFormVisible}/>
+        <Section setFormVisible={setFormVisible} isFormVisible={isFormVisible}/>
     </div>
     <div className='h-48 w-95 bg-black'>
     <Marquee />
