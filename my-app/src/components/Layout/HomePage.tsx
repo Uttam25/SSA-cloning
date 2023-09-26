@@ -14,7 +14,7 @@ const  HomePage = () => {
 
         <Layout setFormVisible={setFormVisible} isFormVisible={isFormVisible}/>
         {
-          isFormVisible && (<EnquiryForm/>)
+          isFormVisible && (<EnquiryForm ontoggle={setFormVisible(false)}/>)
         }
        
       </div>

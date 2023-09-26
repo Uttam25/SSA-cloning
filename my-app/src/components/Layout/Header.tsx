@@ -35,7 +35,7 @@ const Header :React.FC <props>= ({setFormVisible,isFormVisible}) => {
                 <a className='cursor-pointer'>SERVICES</a>
                 
                 <GetInTouchButton title='GET IN TOUCH' onClick={setFormVisible(true)}/>
-                {isFormVisible && <EnquiryForm />}
+                {isFormVisible && <EnquiryForm ontoggle={undefined} />}
               </div>
             </div>
           </nav>
