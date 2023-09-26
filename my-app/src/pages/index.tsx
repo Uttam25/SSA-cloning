@@ -1,9 +1,21 @@
 
 
+import Head from "next/head";
+import dynamic from "next/dynamic";
+
+// const HomeLazy = dynamic(
+//   () => {
+//     return import("../components/layout/index");
+//   },
+//   { ssr: false }
+// );
+import HomePage from  '@/components/Layout/HomePage'
 
 
-export default function Home() {
+const IndexPage = () => {
   return (
-    <h1>hello</h1>
-  )
-}
+    <HomePage/>
+    );
+};
+
+export default IndexPage;
