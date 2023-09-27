@@ -19,7 +19,7 @@ const EnquiryForm : React.FC<EnquiryFormProps> =  () => {
             width="32.718"
             height="32.719"
             viewBox="0 0 32.718 32.719"
-            onClick={() => ontoggle()}
+           
             
           >
             <g
