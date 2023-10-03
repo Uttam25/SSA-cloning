@@ -3,14 +3,15 @@ import Link from 'next/link';
 interface ButtonProps {
   title: string;
   className?: string;
-  onClick ?: () => void;
+  handleClick ?: () => void;
   
 }
 
-const Button: React.FC<ButtonProps> = ({ title, className ,onClick}) => {
+const GetInTouchButton: React.FC<ButtonProps> = ({ title, className ,handleClick}) => {
   
   return (
-    <button className={'flex  items-center rounded-3xl p-4  text-sm bg-white text-black hover:bg-slate-700 hover:text-white'} >
+    <button className={'flex transform translate-x-0 translate-y-0 transition-all duration-400 ease-out  items-center rounded-3xl p-4  text-sm bg-white text-black  hover:text-white hover:bg-slate-600'} 
+    onClick={handleClick}>
       
       <span>
         {title}
@@ -38,5 +39,5 @@ const Button: React.FC<ButtonProps> = ({ title, className ,onClick}) => {
   );
 };
 
-export default Button;
+export default GetInTouchButton;
 

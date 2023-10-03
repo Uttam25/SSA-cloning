@@ -9,10 +9,12 @@ import Marquee from '../Marquee'
   interface LayoutProps {
     setFormVisible: any;
     isFormVisible:boolean
+    setSectionFormVisible:any 
+    isSectionFormVisible:boolean
   }
   
   
-const Layout :React.FC <LayoutProps>= ({setFormVisible,isFormVisible}) => {
+const Layout :React.FC <LayoutProps>= ({setFormVisible,isFormVisible,setSectionFormVisible,isSectionFormVisible}) => {
   return (
     <>
     <Head>
@@ -25,9 +27,9 @@ const Layout :React.FC <LayoutProps>= ({setFormVisible,isFormVisible}) => {
     <div className=' w-95 h-screen  bg-black'>
     <div className='mx-6'>
         <Header setFormVisible={setFormVisible} isFormVisible={isFormVisible} />
-        <Section setFormVisible={setFormVisible} isFormVisible={isFormVisible}/>
+        <Section setSectionFormVisible={setSectionFormVisible} isSectionFormVisible={isSectionFormVisible} setFormVisible={true} isFormVisible={false}/>
     </div>
-    <div className='h-48 w-95 bg-black'>
+    <div className=' w-95 bg-black'>
     <Marquee />
     </div>
     </div>

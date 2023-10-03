@@ -4,11 +4,21 @@ import EnquiryForm from '../EnquiryForm';
 import GetInTouchButton from '../GetInTouchButton';
 
 interface props{
-  setFormVisible:any;
+  setFormVisible:any
   isFormVisible:boolean
 }
 const Header :React.FC <props>= ({setFormVisible,isFormVisible}) => {
+  const handleClick=()=>{
+    setFormVisible(true)
+    
+  }
+  const closeForm=()=>{
+    setFormVisible(true)
+    
+  }
 
+  
+  console.log('handleClick===> setFormVisible',isFormVisible)
   return (
     <div className='w-95  overflow-hidden'>
       <div className=' my-2'>
@@ -22,7 +32,7 @@ const Header :React.FC <props>= ({setFormVisible,isFormVisible}) => {
                   alt="logo image"
                   width={90}
                   height={90}
-                  className="mt-4  transform scale-75 transition-transform duration-300 group-hover:scale-100"
+                  className="mt-4 transform scale-75  transition-transform duration-300 group-hover:scale-100"
                 />
                 <span className="absolute ml-[4.5rem] mb-3 bottom-0 left-0 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   Sunny<br/> state<br/> Agency
@@ -30,12 +40,14 @@ const Header :React.FC <props>= ({setFormVisible,isFormVisible}) => {
                 </a>
               </div>
               <div className={'w-1/2 flex  items-center mr-7 justify-around'}>
-                <a className='cursor-pointer'>WHO ARE WE</a>
-                <a className='cursor-pointer'>CREATORS</a>
-                <a className='cursor-pointer'>SERVICES</a>
+                <a className='cursor-pointer  transition-all duration-400 ease-out'>WHO ARE WE</a>
+                <a className='cursor-pointer  transition-all duration-400 ease-out'>CREATORS</a>
+                <a className='cursor-pointer  transition-all duration-400 ease-out'>SERVICES</a>
                 
-                <GetInTouchButton title='GET IN TOUCH' onClick={setFormVisible(true)}/>
-                {isFormVisible && <EnquiryForm ontoggle={undefined}/>}
+                <GetInTouchButton title='GET IN TOUCH' handleClick={handleClick}/>
+                {/* {isFormVisible && <EnquiryForm />} */}
+                {isFormVisible && <EnquiryForm onclose={closeForm} />}
+                
               </div>
             </div>
           </nav>

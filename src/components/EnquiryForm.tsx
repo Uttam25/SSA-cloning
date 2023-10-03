@@ -5,22 +5,26 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 
+
 interface EnquiryFormProps{
-  ontoggle: any
+  onclose: () => void; 
 }
-const EnquiryForm : React.FC<EnquiryFormProps> =  () => {
-  
-  return (
-    <>
-    <div className={'bg-black h-screen flex flex-col items-center justify-end'}>
+
+const EnquiryForm : React.FC<EnquiryFormProps> =  ({onclose}) => {
+  const handleClick = () =>{ 
+    onclose()
+  }
+return (
+ <>
+    <div className={'bg-black h-screen w-full flex flex-col items-center justify-end'}>
         <div className='mt-5 '>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32.718"
             height="32.719"
             viewBox="0 0 32.718 32.719"
-           
-            
+            className='cursor-pointer'
+            onClick={handleClick}
           >
             <g
               id="Group_11128"
@@ -60,7 +64,7 @@ const EnquiryForm : React.FC<EnquiryFormProps> =  () => {
                 className='my-4'
             />
             </Link>
-            <span className='text-purple-700 text-xl font-light text-center mx-6'>We are glad to see you here. Fill out this form and we will be in contact soon.</span>
+            <p className='text-purple-700 text-xl font-light text-center mx-6'>We are glad to see you here. Fill out this form and we will be in contact soon.</p>
             </div>
             <div className='flex m-6 bg-white-100 flex-col'>
                 <div>
@@ -83,3 +87,6 @@ const EnquiryForm : React.FC<EnquiryFormProps> =  () => {
 }
 
 export default EnquiryForm
+
+
+
