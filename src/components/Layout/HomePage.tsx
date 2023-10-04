@@ -5,7 +5,7 @@ import Layout from './Layout'
 
 const  HomePage = () => {
 
-    const [isFormVisible,setFormVisible] = useState(false)
+    
     const [isSectionFormVisible,setSectionFormVisible] = useState(false)
     
  
@@ -13,7 +13,7 @@ const  HomePage = () => {
   return (
     <>
     <div className='h-full w-95'>
-        <Layout setFormVisible={setFormVisible} isFormVisible={isFormVisible} setSectionFormVisible={setSectionFormVisible} isSectionFormVisible={isSectionFormVisible} />
+        <Layout  setSectionFormVisible={setSectionFormVisible} isSectionFormVisible={isSectionFormVisible} setFormVisible={undefined} isFormVisible={false} />
     </div>
     </>
   )

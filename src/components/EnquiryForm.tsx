@@ -16,7 +16,7 @@ const EnquiryForm : React.FC<EnquiryFormProps> =  ({onclose}) => {
   }
 return (
  <>
-    <div className={'bg-black h-screen w-full flex flex-col items-center justify-end'}>
+    <div className={'bg-black  w-screen h-full overflow-hidden flex flex-col items-center justify-end'}>
         <div className='mt-5 '>
         <svg
             xmlns="http://www.w3.org/2000/svg"
