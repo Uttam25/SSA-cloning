@@ -7,13 +7,14 @@ const  HomePage = () => {
 
     
     const [isSectionFormVisible,setSectionFormVisible] = useState(false)
-    
- 
 
   return (
     <>
-    <div className='h-full w-95'>
+    <div className='relative h-full w-95 bg-cover bg-no-repeat'>
+    
+      
         <Layout  setSectionFormVisible={setSectionFormVisible} isSectionFormVisible={isSectionFormVisible} setFormVisible={undefined} isFormVisible={false} />
+        
     </div>
     </>
   )

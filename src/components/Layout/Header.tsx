@@ -23,10 +23,10 @@ const Header :React.FC <props>= () => {
   console.log('handleClick===> setFormVisible',isFormVisible)
   return (
     <div className='relative w-95  overflow-hidden'>
-      <div className=' my-2'>
-        <header className={'fixed w-screen top-0 left-0 right-0 text-white z-[160] '}>
+      <div className=' m-6'>
+        <header className={'fixed w-screen  top-0 left-0 right-0 text-white z-[160] '}>
           <nav className={'fixed w-screen h-[110px] z-[160] '}>
-            <div className={'flex items-center'}>
+            <div className={'flex  justify-between items-center'}>
               <div className={'w-1/2 ml-4 flex flex-row relative cursor-pointer group items-center'}>
                 <a href='/'>
                 <Image
@@ -45,8 +45,9 @@ const Header :React.FC <props>= () => {
                 <a className='cursor-pointer  hover:text-shadow-w[#fff] transition-all duration-400 ease-out '>WHO ARE WE</a>
                 <a className='cursor-pointer  transition-all duration-400 ease-out'>CREATORS</a>
                 <a className='cursor-pointer  transition-all duration-400 ease-out'>SERVICES</a>
-                
-                <GetInTouchButton title='GET IN TOUCH' handleClick={handleClick} />
+                <div className=' overflow-hidden'>
+                  <GetInTouchButton title='GET IN TOUCH' handleClick={handleClick}  />
+                </div>
                 {/* {isFormVisible && <EnquiryForm />} */}
                 {isFormVisible && <EnquiryForm onclose={closeForm} />}
                 
