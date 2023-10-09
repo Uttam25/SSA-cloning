@@ -5,6 +5,8 @@ import EnquiryForm from '../EnquiryForm'
 import Head from 'next/head'
 import Section from './Section'
 import Marquee from '../Marquee'
+import Creators from '../Creators'
+import SocialMedia from '../SocialMedia'
 
   interface LayoutProps {
     setFormVisible: any;
@@ -41,6 +43,8 @@ const Layout :React.FC <LayoutProps>= ({setFormVisible,isFormVisible,setSectionF
       
     <div className='mt-[5rem] w-95 bg-black'>
     <Marquee />
+    <Creators/>
+    <SocialMedia/>
     </div>
     </div>
     </>
