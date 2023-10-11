@@ -4,7 +4,7 @@ import React from 'react'
 const Creators = () => {
   return (
     <>
-    <div className='text-white text-center'>
+    <div className='w-95 text-white text-center'>
         <p className='text-5xl'>CREATORS</p>
         <p className='text-2xl'>WE WORK WITH</p>
     </div>
@@ -22,6 +22,39 @@ const Creators = () => {
             <p className="text-xl text-red-500   font-semibold  absolute ml-[4.5rem] mb-3 bottom-0 left-0  opacity-0 group-hover:opacity-100 hover:bg-transparent hover:translate-y-24 transition-opacity duration-300">Product Name</p>
             <p className="text-sm text-red-500">Product Details</p>
         </div>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="10.058"
+            height="8.924"
+            viewBox="0 0 10.058 8.924"
+          >
+            <defs>
+              <clipPath id="clip-path">
+                <rect
+                  id="Rectangle_324"
+                  data-name="Rectangle 324"
+                  width="10.058"
+                  height="8.924"
+                  fill="none"
+                  stroke="#ffffff"
+                  strokeWidth="1"
+                />
+              </clipPath>
+            </defs>
+            <g id="Group_523" data-name="Group 523" clipPath="url(#clip-path)">
+              <path
+                id="Path_62"
+                data-name="Path 62"
+                d="M5.6,8.433,9.566,4.466,5.6.5M9.566,4.466H.5"
+                transform="translate(-0.004 -0.004)"
+                fill="none"
+                stroke="#ffffff"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1"
+              />
+            </g>
+          </svg>
   </div>
   </>
   )

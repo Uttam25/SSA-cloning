@@ -22,7 +22,7 @@ const Header :React.FC <props>= () => {
   
   console.log('handleClick===> setFormVisible',isFormVisible)
   return (
-    <div className='relative w-screen overflow-hidden'>
+    <div className='relative w-95 overflow-hidden'>
       <div className=' m-6'>
         <header className={'fixed w-screen  top-0 left-0 right-0 text-white z-[160] '}>
           <nav className={'fixed w-screen h-[110px] z-[160] '}>

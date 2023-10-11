@@ -10,7 +10,7 @@ interface ButtonProps {
 const GetInTouchButton: React.FC<ButtonProps> = ({ title, className ,handleClick}) => {
   
   return (
-    <button className={'flex transform translate-x-0 translate-y-0 transition-all duration-400 ease-out  items-center rounded-3xl p-4  text-sm bg-white text-black  hover:text-white hover:bg-slate-600'} 
+    <button className={'flex transform translate-x-0 translate-y-0 transition-all duration-400 ease-out  items-center rounded-3xl p-4  text-sm bg-white text-black  hover:text-white hover:bg-slate-600 '} 
     onClick={handleClick}>
       
       <span>

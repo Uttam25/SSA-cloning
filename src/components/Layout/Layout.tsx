@@ -1,12 +1,12 @@
 import React from 'react'
 import  Header from './Header'
-import HomePage from './HomePage'
-import EnquiryForm from '../EnquiryForm'
+
 import Head from 'next/head'
 import Section from './Section'
 import Marquee from '../Marquee'
 import Creators from '../Creators'
 import SocialMedia from '../SocialMedia'
+import SnapShow from '../SnapShow'
 
   interface LayoutProps {
     setFormVisible: any;
@@ -33,20 +33,21 @@ const Layout :React.FC <LayoutProps>= ({setFormVisible,isFormVisible,setSectionF
         autoPlay
         loop
         muted
-        width='w-full'
+        width='w-95'
         height='h-full'
         />
-    <div className=' absolute top-0 left-0 w-full h-screen flex flex-col justify-between '>
+    <div className=' absolute top-0 left-0 w-95 h-screen flex flex-col justify-between '>
     
-        <Header setFormVisible={setFormVisible} isFormVisible={isFormVisible} />
+        <Header setFormVisible={true} isFormVisible={false} />
         <Section setSectionFormVisible={setSectionFormVisible} isSectionFormVisible={isSectionFormVisible} setFormVisible={true} isFormVisible={false} />
-      
+        </div> 
     <div className='mt-[5rem] w-95 bg-black'>
-    <Marquee />
-    <Creators/>
-    <SocialMedia/>
+      <Marquee />
+      <Creators/>
+      <SocialMedia/>
+      <SnapShow  />
     </div>
-    </div>
+    
     </>
   )
 }
